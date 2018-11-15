@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/home/detail', function () {
+    return view('detail');
+});
+Route::resource('/home/barang','BarangController');
+Route::resource('/home/jenis','JenisController');
